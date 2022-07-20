@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active:
+    - "@spring.profiles.active@"
+
+logging:
+  pattern:
+    console: "timestamp=%date severity=%-5level message=%msg%n"
+    
+
+maskservice:
+  maskuser:
+      url: "http://localhost:9090/mask/user"

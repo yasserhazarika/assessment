@@ -1,0 +1,6 @@
+server:
+  port: 9090
+
+logging:
+  pattern:
+    console: "timestamp=%date severity=%-5level message=%msg%n"

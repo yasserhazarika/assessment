@@ -1,0 +1,31 @@
+{
+	"variables": [],
+	"info": {
+		"name": "mask",
+		"_postman_id": "f221d5d4-3f90-6821-4789-5b1af9b417ac",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Mask user",
+			"request": {
+				"url": "http://localhost:9090/mask/user",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"jim\",\n\t\"lastName\": \"mane\",\n\t\"middleInitial\" : \"L\",\n\t\"email\" : \"yasser.mane@mastercard.com\",\n\t\"phone\" : 4709908876,\n\t\"billingAddress\" : \"15209 Morris Road, Unit 44567, Dunwoody 30338\",\n\t\"shippingAddress\": \"Westside ParkWay, Alpharetta 30009\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

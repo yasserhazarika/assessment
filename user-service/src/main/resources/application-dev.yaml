@@ -1,0 +1,21 @@
+userlist:
+  users:
+    - 
+      id: e34d5d28-7a8e-4e5b-9356-73195c3cb87e
+      firstName: John
+      lastName: Doe
+      middleInitial: J
+      email: john.doe@mastercard.com
+      phone: "4045567789"
+      billingAddress: 15209 Morris Road, Unit 44567, Dunwoody 30338
+      shippingAddress: Westside ParkWay, Alpharetta 30009
+    
+    - 
+      id: e34d5d28-7000-4e5b-9356-788899000665
+      firstName: Jill
+      lastName: Mane
+      middleInitial: M
+      email: jill.mane@mastercard.com
+      phone: "4045567990"
+      billingAddress: 6303 Ashford Gables Drive, Dunwoody 30338
+      shippingAddress: Westside ParkWay, Roswell 30040

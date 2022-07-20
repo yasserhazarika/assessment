@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "User",
+		"_postman_id": "cc312ef8-a6a3-b9d2-47a9-31303b40cd52",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Health",
+			"request": {
+				"url": "http://localhost:8080/actuator/health",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "List Users",
+			"request": {
+				"url": "http://localhost:8080/userservice/users",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"request": {
+				"url": "http://localhost:8080/userservice/user/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Save User",
+			"request": {
+				"url": "http://localhost:8080/userservice/user",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"John\",\n\t\"lastName\": \"Doe\",\n\t\"middleInitial\" : \"Lim\",\n\t\"email\" : \"john.doe@mastercard.com\",\n\t\"phone\" : 4049906678,\n\t\"billingAddress\" : \"13209 Morris Road, Unit 12345, Alpharetta 30004\",\n\t\"shippingAddress\": \"Westside ParkWay, Alpharetta 30004\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "save user-error",
+			"request": {
+				"url": "http://localhost:8080/userservice/user",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"jim\",\n\t\"lastName\": \"mane\",\n\t\"middleInitial\" : \"L\",\n\t\"email\" : \"jim.mane@mastercard.com\",\n\t\"phone\" : \"4709908876j\",\n\t\"billingAddress\" : \"15209 Morris Road, Unit 44567, Dunwoody 30338\",\n\t\"shippingAddress\": \"Westside ParkWay, Alpharetta 30009\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
